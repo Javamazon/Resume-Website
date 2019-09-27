@@ -1,0 +1,334 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+
+
+//Font-Variables
+$Roboto: 'Roboto',
+sans-serif;
+$RobotoCon: 'Roboto Condensed',
+sans-serif;
+
+//Color-Variables:
+$lightgrey: #E8E9EB;
+
+$background: #2f4858;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+
+  background-color: $background;
+}
+
+h2 {
+  font-family: $Roboto;
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
+
+}
+
+h3 {
+  font-family: $Roboto;
+  font-size: 2em;
+  font-weight: 100;
+  color: #A2AAAD;
+  text-align: center;
+}
+
+p {
+  font-family: $RobotoCon;
+
+}
+
+.top-menu {
+  position: fixed;
+  top: 200px;
+  width: 150px;
+  overflow: hidden;
+  background-color: #020202;
+  text-align: center;
+  font-family: $RobotoCon;
+
+
+}
+
+.top-menu a {
+  text-align: center;
+  color: white;
+  display: block;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.top-menu a:hover {
+  background-color: #4a728b;
+}
+
+.top-menu a.active{
+  background-color:  #4a728b;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: auto;
+
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+#home {
+  background-image: url('Images/splashImgLg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  border: 1px solid black;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+
+.parallelogram {
+  position: absolute;
+  top: px;
+  left: 205px;
+  width: 500px;
+  height: 500px;
+  background: #555;
+  overflow: hidden;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+}
+
+//**********BIO
+
+#bio {
+  width: 75%;
+  height: 900px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: white;
+
+  hr {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.mainContainer {
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+#bioDiv1 {
+
+  width: 25%;
+  height: 200px;
+
+  p {
+    word-wrap: normal;
+    
+  }
+
+}
+
+#bioDiv2 {
+
+  width: 25%;
+
+  #headshot {
+
+    width: 300px;
+    clip-path: circle(36.5% at 50% 58%);
+
+  }
+
+
+
+
+
+  #bioDiv3 {
+
+
+    height: 200px;
+    width: 25%;
+
+  }
+}
+
+//*************SKILLS
+
+#skills {
+  width: 75%;
+  height: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  background: #555;
+
+  h2 {
+    color: #E8E9EB;
+  }
+
+
+  hr {
+    width: 50%;
+    text-align: center;
+  }
+
+
+
+}
+
+#skillsContainer {
+  display:flex;
+  width: 50%;
+ 
+  flex-direction: column;
+}
+
+.skills {
+
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+
+.bar{
+  background-color: #EEE;
+  width:100%;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #718F94;
+}
+.bar::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+
+
+
+
+/* Dark Grey */
+#education {
+  width: 75%;
+  height: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  background: white;
+
+
+  hr {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+#portfolio{
+  width: 75%;
+  height: 1000px;
+  margin: auto;
+  border: 1px solid black;
+  background: #555;
+
+  h2 {
+    color: #E8E9EB;
+
+  }
+
+  hr{
+    width:50%;
+    text-align: center;
+  }
+
+}
+#contact {
+  width: 75%;
+  height: 500px;
+  margin: auto;
+  border: 1px solid black;
+  background: white;
+
+  h2 {
+    color: black;
+   
+  }
+
+
+  hr {
+    width: 50%;
+    text-align: center;
+  }
+}

@@ -11,7 +11,6 @@ sans-serif;
 
 //Color-Variables:
 $lightgrey: #E8E9EB;
-
 $background: #2f4858;
 
 html,
@@ -22,8 +21,13 @@ body {
 }
 
 body {
-
   background-color: $background;
+}
+
+h1{
+  font-family: $Roboto;
+  font-weight: 50;
+
 }
 
 h2 {
@@ -31,6 +35,7 @@ h2 {
   font-size: 3em;
   font-weight: 100;
   text-align: center;
+  padding-top: 20px;
 
 }
 
@@ -72,8 +77,8 @@ p {
   background-color: #4a728b;
 }
 
-.top-menu a.active{
-  background-color:  #4a728b;
+.top-menu a.active {
+  background-color: #4a728b;
   color: black;
 }
 
@@ -98,24 +103,20 @@ header {
   height: 500px;
   width: 100%;
   margin: auto;
+  text-align: center;
+  
+ 
 }
 
-
-.parallelogram {
-  position: absolute;
-  top: px;
-  left: 205px;
-  width: 500px;
-  height: 500px;
-  background: #555;
-  overflow: hidden;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-
+#name {
+  top: 400px;
 }
+
 
 //**********BIO
 
 #bio {
+  padding-top: 20px;
   width: 75%;
   height: 900px;
   margin: auto;
@@ -130,7 +131,7 @@ header {
 
 .mainContainer {
   padding: 20px;
-  
+
   margin: auto;
   display: flex;
   width: 80%;
@@ -146,17 +147,15 @@ header {
 
   p {
     word-wrap: normal;
-    
+
   }
 
 }
 
 #bioDiv2 {
-
   width: 25%;
 
   #headshot {
-
     width: 300px;
     clip-path: circle(36.5% at 50% 58%);
 
@@ -167,9 +166,7 @@ header {
 
 
   #bioDiv3 {
-
-
-    height: 200px;
+  height: 200px;
     width: 25%;
 
   }
@@ -178,12 +175,10 @@ header {
 //*************SKILLS
 
 #skills {
+  padding-top: 20px;
   width: 75%;
   height: 1000px;
-  margin:auto;
-  
-
-  
+  margin: auto;
   background: #A2AAAD;
 
   h2 {
@@ -201,7 +196,7 @@ header {
 }
 
 .skillsContainer {
-  display:flex;
+  display: flex;
   width: 40%;
   margin: 0 auto;
   flex-direction: column;
@@ -213,50 +208,59 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  
+
 }
-@keyframes load{
+
+@keyframes load {
   from {
     width: 0%
   }
 }
-@-webkit-keyframes load{
+
+@-webkit-keyframes load {
   from {
     width: 0%
   }
 }
-@-moz-keyframes load{
+
+@-moz-keyframes load {
   from {
     width: 0%
   }
 }
-@-o-keyframes load{
+
+@-o-keyframes load {
   from {
     width: 0%
   }
 }
 
 
-.bar{
+.bar {
   background-color: #EEE;
-  width:100%;
+  width: 100%;
   padding: 10px;
   border-radius: 15px;
   margin-bottom: 5px;
   font-size: 14px;
   color: #FFF;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.bar::before{
-  content:  attr(data-skill);
+.bar::before {
+  content: attr(data-skill);
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00b7ea+0,009ec3+100;Blue+3D+%2315 */
-background: #00b7ea; /* Old browsers */
-background: -moz-linear-gradient(top,  #00b7ea 0%, #009ec3 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #00b7ea 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #00b7ea 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); /* IE6-9 */
+  background: #00b7ea;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00b7ea 0%, #009ec3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00b7ea 0%, #009ec3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7ea', endColorstr='#009ec3', GradientType=0);
+  /* IE6-9 */
 
   display: inline-block;
   padding: 10px 0 10px 10px;
@@ -267,31 +271,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
   -o-animation: load 2s 0s;
 }
 
-.bar.front::before{
+.bar.front::before {
   background-color: #718F94;
 }
 
-.bar.back::before{
+.bar.back::before {
   background-color: #a6cfe3;
 }
-.bar::before{
+
+.bar::before {
   width: calc(20% - 10px);
 }
-.bar.basic::before{
+
+.bar.basic::before {
   width: calc(40% - 10px);
 }
 
-.bar.learning::before{
+.bar.learning::before {
   width: calc(20% - 10px);
 }
 
-.bar.intermediate::before{
+.bar.intermediate::before {
   width: calc(60% - 10px);
 }
-.bar.advanced::before{
+
+.bar.advanced::before {
   width: calc(80% - 10px);
 }
-.bar.expert::before{
+
+.bar.expert::before {
   width: calc(100% - 10px);
 }
 
@@ -301,10 +309,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
 
 /* Dark Grey */
 #education {
+  padding-top: 20px;
   width: 75%;
-  height: 1000px;
+  height: 700px;
   margin: auto;
- 
   background: white;
 
 
@@ -314,11 +322,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
   }
 }
 
-#portfolio{
-  width: 75%;
-  height: 1000px;
-  margin: auto;
+.educationDiv{
+ 
+  width: 100%;
+  height:500px;
+
+  h4 {
+    font-family: $Roboto;
+    font-size: 1.25em;
+  }
+  hr {
+    width: 100%;
+  }
+
+}
+
+#softSkills {
   
+    padding-top: 20px;
+    width: 75%;
+    height: 700px;
+    margin: auto;
+    background: #A2AAAD;
+    font-family: $RobotoCon;
+  
+    h2 {
+      color: #E8E9EB;
+    }
+    
+    hr {
+      width: 50%;
+      text-align: center;
+    }
+    
+    p {
+      color: #E8E9EB;
+    }
+  
+  
+  
+  }
+
+  .softSkill {
+    flex-direction: column;
+  }
+
+
+#experience {
+  padding-top: 20px;
+  width: 75%;
+  height: 700px;
+  margin: auto;
   background: #555;
 
   h2 {
@@ -326,27 +380,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
 
   }
 
-  hr{
-    width:50%;
+  h4 {
+    font-family: $RobotoCon;
+    color: #E8E9EB;
+  }
+
+    p{
+      color: #E8E9EB;
+    }
+  hr {
+    width: 50%;
     text-align: center;
   }
 
 }
+
 #contact {
+  padding-top: 20px;
   width: 75%;
   height: 500px;
   margin: auto;
-
   background: white;
 
   h2 {
     color: black;
-   
+
   }
 
 
   hr {
     width: 50%;
     text-align: center;
+  }
+
+  a {
+    color: black;
   }
 }

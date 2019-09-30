@@ -8,11 +8,16 @@ body {
 body {
   background-color: #2f4858; }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 50; }
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 3em;
   font-weight: 100;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
 
 h3 {
   font-family: "Roboto", sans-serif;
@@ -64,19 +69,14 @@ header {
   background-size: 75%;
   height: 500px;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
 
-.parallelogram {
-  position: absolute;
-  top: px;
-  left: 205px;
-  width: 500px;
-  height: 500px;
-  background: #555;
-  overflow: hidden;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); }
+#name {
+  top: 400px; }
 
 #bio {
+  padding-top: 20px;
   width: 75%;
   height: 900px;
   margin: auto;
@@ -109,6 +109,7 @@ header {
     width: 25%; }
 
 #skills {
+  padding-top: 20px;
   width: 75%;
   height: 1000px;
   margin: auto;
@@ -165,7 +166,7 @@ header {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #00b7ea 0%, #009ec3 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7ea', endColorstr='#009ec3', GradientType=0);
   /* IE6-9 */
   display: inline-block;
   padding: 10px 0 10px 10px;
@@ -201,26 +202,61 @@ header {
 
 /* Dark Grey */
 #education {
+  padding-top: 20px;
   width: 75%;
-  height: 1000px;
+  height: 700px;
   margin: auto;
   background: white; }
   #education hr {
     width: 50%;
     text-align: center; }
 
-#portfolio {
+.educationDiv {
+  width: 100%;
+  height: 500px; }
+  .educationDiv h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25em; }
+  .educationDiv hr {
+    width: 100%; }
+
+#softSkills {
+  padding-top: 20px;
   width: 75%;
-  height: 1000px;
+  height: 700px;
+  margin: auto;
+  background: #A2AAAD;
+  font-family: "Roboto Condensed", sans-serif; }
+  #softSkills h2 {
+    color: #E8E9EB; }
+  #softSkills hr {
+    width: 50%;
+    text-align: center; }
+  #softSkills p {
+    color: #E8E9EB; }
+
+.softSkill {
+  flex-direction: column; }
+
+#experience {
+  padding-top: 20px;
+  width: 75%;
+  height: 700px;
   margin: auto;
   background: #555; }
-  #portfolio h2 {
+  #experience h2 {
     color: #E8E9EB; }
-  #portfolio hr {
+  #experience h4 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #E8E9EB; }
+  #experience p {
+    color: #E8E9EB; }
+  #experience hr {
     width: 50%;
     text-align: center; }
 
 #contact {
+  padding-top: 20px;
   width: 75%;
   height: 500px;
   margin: auto;
@@ -230,5 +266,7 @@ header {
   #contact hr {
     width: 50%;
     text-align: center; }
+  #contact a {
+    color: black; }
 
 /*# sourceMappingURL=stylesheet.css.map */
